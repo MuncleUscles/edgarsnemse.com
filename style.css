@@ -1,0 +1,327 @@
+:root {
+  --bg: #ffffff;
+  --ink: #131a2a;
+  --soft: #5a6478;
+  --line: #e1e5ec;
+  --accent: #0b5cad;
+  color-scheme: light dark;
+}
+
+/* Dark values: followed from the system unless the visitor picked a theme. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #10141c;
+    --ink: #e8ecf3;
+    --soft: #98a2b5;
+    --line: #262d3a;
+    --accent: #7fb2f0;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #10141c;
+  --ink: #e8ecf3;
+  --soft: #98a2b5;
+  --line: #262d3a;
+  --accent: #7fb2f0;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] { color-scheme: light; }
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Schibsted Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: clamp(3rem, 12vh, 8rem) 1.5rem 4rem;
+}
+
+.portrait {
+  display: block;
+  width: 8.5rem;
+  height: auto;
+  margin: 0 0 2rem;
+  border-radius: 0.375rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.75rem, 9vw, 4.75rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.lead {
+  margin: 2.5rem 0 0;
+  max-width: 34rem;
+  font-size: 1.375rem;
+  line-height: 1.45;
+  letter-spacing: -0.005em;
+}
+
+.lead + .lead {
+  margin-top: 1rem;
+  color: var(--soft);
+}
+
+section { margin-top: 4.5rem; }
+
+h2 {
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 500;
+}
+
+p { margin: 0; }
+
+.timeline,
+.links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  column-gap: 1.5rem;
+  padding: 0.75rem 0;
+}
+
+.when {
+  color: var(--soft);
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.8;
+  justify-self: start;
+}
+
+.timeline p {
+  margin-top: 0.125rem;
+  color: var(--soft);
+  font-size: 1rem;
+}
+
+.entries {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entries li { padding: 0.625rem 0; }
+
+.entries p {
+  margin-top: 0.125rem;
+  color: var(--soft);
+  font-size: 1rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--soft);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+footer {
+  margin-top: 5rem;
+  color: var(--soft);
+  font-size: 0.9375rem;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  color: var(--soft);
+  cursor: pointer;
+}
+
+.theme-toggle svg { width: 1.125rem; height: 1.125rem; }
+
+.theme-toggle:hover { color: var(--accent); }
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (max-width: 34rem) {
+  .timeline li {
+    grid-template-columns: 1fr;
+    padding: 0.875rem 0;
+  }
+  .when { line-height: 1.5; }
+}
+
+/* Wide screens: a left rail holds the portrait and the section labels,
+   so the content column can use the width. */
+@media (min-width: 64rem) {
+  main {
+    max-width: 68rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  header,
+  section {
+    display: grid;
+    grid-template-columns: 13rem minmax(0, 1fr);
+    column-gap: 3rem;
+  }
+
+  header > *,
+  section > * { grid-column: 2; }
+
+  header .portrait {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    align-self: start;
+    width: 11rem;
+    margin: 0.5rem 0 0;
+  }
+
+  .lead { max-width: 40rem; }
+
+  section {
+    margin-top: 3.5rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--line);
+  }
+
+  section > h2 {
+    grid-column: 1;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1.8;
+  }
+
+  .timeline li:first-child,
+  .entries li:first-child { padding-top: 0; }
+
+  .timeline li { grid-template-columns: 8rem 1fr; }
+
+  .timeline p,
+  .entries p { max-width: 42rem; }
+
+  footer { margin-left: 16rem; }
+}
+
+.notfound { display: block; }
+.notfound .when { margin-bottom: 1rem; }
+
+.notfound .caption {
+  font-family: "Abril Fatface", "Cooper Black", Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 8.5vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: 0;
+  color: #f7e017;
+  -webkit-text-stroke: 0.09em #14110a;
+  paint-order: stroke fill;
+}
+
+/* Printing gives a plain CV: one column, black on white, links spelled out
+   where the address is the point. */
+@media print {
+  @page { margin: 14mm 16mm; }
+
+  :root, :root[data-theme="dark"], :root:not([data-theme="light"]) {
+    --bg: #ffffff;
+    --ink: #000000;
+    --soft: #333333;
+    --line: #bbbbbb;
+    --accent: #000000;
+    color-scheme: light;
+  }
+
+  body { font-size: 9.5pt; line-height: 1.4; }
+
+  .theme-toggle, .portrait { display: none !important; }
+
+  main { max-width: none; padding: 0; }
+
+  header, section { display: block; }
+
+  h1 { font-size: 24pt; letter-spacing: -0.02em; }
+
+  .lead { max-width: none; margin-top: 8pt; font-size: 11pt; }
+  .lead + .lead { margin-top: 4pt; color: var(--ink); }
+
+  section { margin-top: 12pt; padding-top: 0; border-top: 0; }
+
+  section > h2, h2 {
+    margin: 0 0 4pt;
+    padding: 0 0 2pt;
+    border-bottom: 0.5pt solid var(--line);
+    font-size: 9.5pt;
+    line-height: 1.4;
+  }
+
+  .timeline li { grid-template-columns: 6.5rem 1fr; column-gap: 0.75rem; padding: 2.5pt 0; break-inside: avoid; }
+  .entries li { padding: 2pt 0; break-inside: avoid; }
+  .timeline li:first-child, .entries li:first-child { padding-top: 2pt; }
+
+  .when, .timeline p, .entries p { font-size: 9pt; line-height: 1.4; max-width: none; }
+
+  a { text-decoration: none; }
+
+  .links { display: block; }
+  .links li { padding: 1pt 0; }
+  .links a[href^="http"]::after { content: ": " attr(href); color: var(--soft); }
+  .links li:last-child { display: none; }
+
+  footer { margin: 12pt 0 0; font-size: 8pt; }
+  .screen-only { display: none; }
+  footer p::after { content: " edgarsnemse.com"; }
+}

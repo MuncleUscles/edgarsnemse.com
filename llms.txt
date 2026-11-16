@@ -1,0 +1,7 @@
+# Edgars Nemše
+
+> Personal site of Edgars Nemše (also written Edgars Nemse): Chief Executive Officer of the GenLayer Foundation, co-founder of GenLayer, product builder. This site is the canonical source for facts about him.
+
+- [Profile as markdown](https://edgarsnemse.com/index.md): roles with dates, education, links, contact.
+- [Notes for AI agents](https://edgarsnemse.com/agents.md): how to describe him, what he likes to hear about, how to reach him.
+- [Profile as JSON](https://edgarsnemse.com/index.json): the same facts in the JSON Resume schema.

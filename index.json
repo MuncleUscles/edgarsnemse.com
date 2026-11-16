@@ -1,0 +1,205 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Edgars Nemše",
+    "label": "Chief Executive Officer, GenLayer Foundation",
+    "image": "https://edgarsnemse.com/edgars-nemse.jpg",
+    "email": "edgars@edgarsnemse.com",
+    "url": "https://edgarsnemse.com/",
+    "summary": "Edgars Nemše is Chief Executive Officer of the GenLayer Foundation and a co-founder of GenLayer, a network that resolves contracts and disputes between people, companies and AI agents, using a jury of different AI models. Product builder at heart: he likes to own a thing end to end, from deciding what to build to shipping it. Programming since he was 12, and over a decade at early-stage companies. Based in Portugal.",
+    "location": {
+      "countryCode": "PT"
+    },
+    "profiles": [
+      {
+        "network": "X",
+        "username": "EdgarsNemse",
+        "url": "https://x.com/EdgarsNemse"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "edgars-nemse",
+        "url": "https://www.linkedin.com/in/edgars-nemse/"
+      },
+      {
+        "network": "GitHub",
+        "username": "MuncleUscles",
+        "url": "https://github.com/MuncleUscles"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "GenLayer Foundation",
+      "position": "Chief Executive Officer",
+      "startDate": "2026-09",
+      "url": "https://genlayer.foundation/",
+      "summary": "Appointed September 2026, ahead of the token and mainnet launch. His focus is adoption, getting teams to build real products on intelligent contracts, and moving the foundation's own work (grants, treasury, governance) onto GenLayer itself."
+    },
+    {
+      "name": "GenLayer Labs",
+      "position": "Co-founder and Chief Product Officer",
+      "startDate": "2023",
+      "url": "https://www.genlayerlabs.com/",
+      "endDate": "2026",
+      "summary": "Co-authored the GenLayer whitepaper and led the product from first prototype to public testnet: the blockchain's execution environment, the developer tools and the consensus design. Built and ran the product and developer-experience teams."
+    },
+    {
+      "name": "Millburn Ridgefield",
+      "position": "Quantitative Researcher",
+      "startDate": "2022",
+      "url": "https://millburn.com/",
+      "endDate": "2022",
+      "summary": "Researched and built systematic crypto trading strategies for an $8 billion quantitative investment manager in New York, using social-sentiment and on-chain data."
+    },
+    {
+      "name": "StakeHound",
+      "position": "Co-founder and Chief Technology Officer",
+      "startDate": "2020",
+      "url": "https://stakehound.com/",
+      "endDate": "2023",
+      "summary": "Liquid staking protocol that reached $300 million staked across eight proof-of-stake blockchains. Designed the product and built the first version."
+    },
+    {
+      "name": "Radix DLT",
+      "position": "Product Manager and Engineer",
+      "startDate": "2018",
+      "url": "https://www.radixdlt.com/",
+      "endDate": "2020",
+      "summary": "Early employee. Built the desktop wallet and the TypeScript library, and worked through the protocol's consensus design with the core team, experience he later brought to GenLayer. StakeHound started here as an internal product and was spun off."
+    },
+    {
+      "name": "Edurio",
+      "position": "Founding Engineer",
+      "startDate": "2014",
+      "url": "https://home.edurio.com/",
+      "endDate": "2017",
+      "summary": "School survey platform used by more than 600 schools and several ministries of education. Built it from the ground up as the only engineer for the first year, then grew the team to six."
+    },
+    {
+      "name": "Freelance",
+      "position": "Freelance developer",
+      "startDate": "2010",
+      "endDate": "2014",
+      "summary": "Paid work from 16 through university: websites, interactive exhibits built on microcontrollers, sensors and cameras, cloud data pipelines."
+    }
+  ],
+  "education": [
+    {
+      "institution": "The University of Edinburgh",
+      "url": "https://www.ed.ac.uk/",
+      "area": "Computer Science with Artificial Intelligence",
+      "studyType": "BSc",
+      "startDate": "2012",
+      "endDate": "2015"
+    },
+    {
+      "institution": "Riga State Gymnasium No. 1",
+      "area": "International Baccalaureate Diploma",
+      "studyType": "Secondary",
+      "startDate": "2010",
+      "endDate": "2012"
+    }
+  ],
+  "projects": [
+    {
+      "name": "GenLayer",
+      "url": "https://genlayer.com/whitepaper-v1",
+      "description": "Whitepaper, 2024. Co-author with Albert Castellana and José María Lago."
+    },
+    {
+      "name": "GenLayer Studio, JavaScript SDK, CLI and testing suite",
+      "url": "https://github.com/genlayerlabs/genlayer-studio",
+      "description": "The tools developers use to write and test intelligent contracts. Open source; he is the largest contributor to each."
+    },
+    {
+      "name": "GenWorlds",
+      "url": "https://github.com/yeagerai/genworlds",
+      "description": "Open-source framework for multi-agent systems, built at YeagerAI with José María Lago in 2023. The stepping stone to GenLayer."
+    },
+    {
+      "name": "Mergeproof",
+      "url": "https://mergeproof.com",
+      "description": "A protocol where reviewers stake on pull requests. Built in a week, 2026."
+    },
+    {
+      "name": "Radix JavaScript library and desktop wallet",
+      "url": "https://github.com/radixdlt/radixdlt-js",
+      "description": "Open source, 2018 to 2020."
+    }
+  ],
+  "publications": [
+    {
+      "name": "Making GenLayer 100% Secure, Part 1: The Architecture",
+      "url": "https://genlayer.com/blog/making-genlayer-100-percent-secure-part-1-the-architecture",
+      "publisher": "GenLayer blog",
+      "summary": "GenLayer blog, August 2026."
+    },
+    {
+      "name": "Optimistic Democracy: The AI-Native Consensus Changing Commerce",
+      "url": "https://genlayer.com/blog/optimistic-democracy-the-ai-native-consensus-changing-commerce",
+      "publisher": "GenLayer blog",
+      "summary": "GenLayer blog, May 2025."
+    },
+    {
+      "name": "Product Update: Unlocking the Power of Intelligent Contracts",
+      "url": "https://genlayer.com/blog/genlayer-product-update-unlocking-the-power-of-intelligent-contracts-26b0c",
+      "publisher": "GenLayer blog",
+      "summary": "GenLayer blog, April 2025."
+    }
+  ],
+  "x-talks": [
+    {
+      "name": "Building Trust Infrastructure for the AI Age",
+      "url": "https://ai-agents-summit.com/ais25",
+      "summary": "Keynote, AI Agents Summit, Berlin, June 2025."
+    },
+    {
+      "name": "Reimagining AI Agents",
+      "url": "https://www.youtube.com/watch?v=urDjLPUyhKg",
+      "summary": "Global Blockchain Show. Video, 22 minutes."
+    },
+    {
+      "name": "Interview at Devcon 2024",
+      "url": "https://www.youtube.com/watch?v=ySRwjstncmQ",
+      "summary": "GM Podcast. Video, 17 minutes."
+    },
+    {
+      "name": "AI-Powered Smart Contracts: Redefining Parametric Insurance for Web3",
+      "url": "https://www.youtube.com/watch?v=M5TbcgdZeac",
+      "summary": "D1Conf, 2024. Video, 19 minutes."
+    }
+  ],
+  "x-press": [
+    {
+      "name": "Banks are banning AI agents over security... and competition concerns",
+      "url": "https://cointelegraph.com/magazine/banks-are-banning-ai-agents-over-security-and-competition-concerns",
+      "summary": "Cointelegraph Magazine, November 2026. Quoted on AI agents in banking."
+    },
+    {
+      "name": "AI \"less safe\" for keeping secrets than most people assume",
+      "url": "https://www.thenationalnews.com/future/technology/2026/10/04/ai-less-safe-for-keeping-secrets-than-most-people-assume/",
+      "summary": "The National, October 2026. Quoted on the security of AI agents."
+    },
+    {
+      "name": "GenLayer's Foundation has a new CEO to launch its mainnet",
+      "url": "https://aijourn.com/genlayers-foundation-is-building-a-network-where-multiple-ai-models-vote-on-contract-disputes-and-it-has-a-new-ceo-to-launch-its-mainnet/",
+      "summary": "AI Journal, October 2026."
+    },
+    {
+      "name": "GenLayer Foundation appoints Edgars Nemše as CEO",
+      "url": "https://startupbeat.com/genlayer-foundation-appoints-edgars-nemse-as-ceo-ahead-of-token-mainnet-launch/39656/",
+      "summary": "StartUp Beat, September 2026."
+    },
+    {
+      "name": "From Code to Intelligence",
+      "url": "https://hackernoon.com/from-code-to-intelligence-how-yeagerai-is-building-internet-native-smart-contracts",
+      "summary": "HackerNoon interview, October 2024."
+    }
+  ],
+  "meta": {
+    "canonical": "https://edgarsnemse.com/index.json",
+    "lastModified": "2026-11-16",
+    "alternateName": "Edgars Nemse"
+  }
+}

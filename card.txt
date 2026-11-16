@@ -1,0 +1,23 @@
+
+  Edgars Nemše
+
+  Chief executive of the GenLayer Foundation and a co-founder of
+  GenLayer, a network that resolves contracts and disputes between
+  people, companies and AI agents, using a jury of different AI models.
+
+  Product builder. Programming since 12. Based in Portugal.
+
+  Now      Chief Executive Officer, GenLayer Foundation     2026 to now
+  Before   Co-founder and CPO, GenLayer Labs                2023 to 2026
+           Quantitative Researcher, Millburn Ridgefield     2022
+           Co-founder and CTO, StakeHound                   2020 to 2023
+           Product Manager and Engineer, Radix DLT          2018 to 2020
+           Founding Engineer, Edurio                        2014 to 2017
+
+  Web      https://edgarsnemse.com
+  Mail     edgars@edgarsnemse.com
+  X        https://x.com/EdgarsNemse
+  GitHub   https://github.com/MuncleUscles
+
+  More     curl edgarsnemse.com/cv
+

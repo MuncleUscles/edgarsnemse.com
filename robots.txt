@@ -1,0 +1,10 @@
+# Everyone is welcome here, including AI crawlers, assistants and agents.
+# Machine-readable profile: https://edgarsnemse.com/index.md
+# Summary for language models: https://edgarsnemse.com/llms.txt
+# Notes for agents: https://edgarsnemse.com/agents.md
+
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+
+Sitemap: https://edgarsnemse.com/sitemap.xml
